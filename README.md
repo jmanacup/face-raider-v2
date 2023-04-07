@@ -1,8 +1,35 @@
-# Face Raider
-A web application for facial recognition attendence for classrooms
+# Face Raider V2
 
-1. To run application
-`npm run dev`
-2. Then run the server by entering
-`nodemon`
-3. Make sure you are in the right directory for frontend or backend.
+A React web application that uses MXFACE facial recognition API for classroom attendance. Built using React, Express, TailwindCSS.
+
+This is a forked from **Face Raider** hackathon proposed project with additional features such as implementing *TailwindCSS* and adding *swagger* documentation.
+ 
+## Requirements to Run
+
+* create an `.env` file after cloning the repo. This should require the following:
+
+```js
+SUPABASE_KEY = ...
+PORT = 5000
+MXFACE_KEY = ...
+MXFACE_REQ_URL = "https://faceapi.mxface.ai/api/v3/face/verify"
+```
+Details:
+
+| **Field**      | **Description**                                  
+|----------------|--------------------------------------------------
+| SUPABASE_KEY   | Represents the Supabase API Public Key           
+| PORT           | Port for the Express.js                          
+| MXFACE_KEY     | API key of the MXFACE API                        
+| MXFACE_REQ_URL | This is a constant url that refers to MXFACE API 
+
+### Running the Program
+
+1. To run application, you need to run the server by navigating to *backend* then running the following command,
+```
+npm run dev
+```
+2. Then run the react app by navigating to *frontend* and entering,
+```
+nodemon
+```
