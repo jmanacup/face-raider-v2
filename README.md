@@ -33,3 +33,6 @@ npm run dev
 ```
 nodemon
 ```
+
+
+To request for a demo, please reach out to [me](mailto:john.manacup@gmail.com).
